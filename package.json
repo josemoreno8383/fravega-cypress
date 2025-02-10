@@ -1,0 +1,19 @@
+{
+  "name": "fravega-cypress",
+  "version": "1.0.0",
+  "description": "Pruebas E2E para Fravega",
+  "main": "index.js", 
+  "scripts": {
+    "open:fravega:test": "cypress open --config baseUrl=https://www.fravega.com/,specPattern=\"**/fravega/*.feature\"",
+    "run:fravega:test": "cypress run --spec \"**/fravega/*.feature\" --config baseUrl=https://www.fravega.com/ --browser chrome"
+  },
+  "author": "Jmoreno",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+  }
+}
